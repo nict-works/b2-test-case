@@ -1,0 +1,22 @@
+{
+  "name": "b2-test-case",
+  "version": "1.0.0",
+  "description": "Test case repo for applications.",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass src/scss/main.scss dist/css/main.css --no-source-map",
+    "watch": "sass --watch src/scss/main.scss dist/css/main.css",
+    "serve": "live-server",
+    "start": "concurrently \"npm run watch\" \"npm run serve\""
+  },
+  "author": "Niek van der Velde <niek@b2design.nl>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.6"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "live-server": "^1.2.2",
+    "sass": "^1.62.1"
+  }
+}
